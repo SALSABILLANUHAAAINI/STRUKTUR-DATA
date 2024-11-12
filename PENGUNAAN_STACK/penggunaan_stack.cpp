@@ -59,7 +59,7 @@ int main() {
                 cout << "Hasil evaluasi postfix: " << result << endl;
             }
         } else if (pilihan == '2') {
-            cout << "Masukkan ekspresi postfix: ";
+            cout << "Masukkan ekspresi postfix yang ingin diselesaikan: ";
             string postfixExp;
             getline(cin, postfixExp);
             cout << "Hasil evaluasi: " << evaluatePostfix(postfixExp) << endl;
@@ -116,7 +116,7 @@ int stackTop() {
     }
 }
 
-/
+
 void destroyStack() {
     while (!isEmpty()) {
         Node *temp = stack.top;
